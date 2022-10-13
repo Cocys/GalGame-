@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="">
+  <head>
+    <meta charset="utf-8">
+<!--      针对IE浏览器的一个特殊配置，让IE以最高级别渲染级别渲染页面-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+<!--      开启移动端的理想视口-->
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+<!--      网页页签图标-->
+    <link rel="icon" href="<%= BASE_URL %>favicon.ico">
+<!--      配置网页的标题，去packge.json找标题-->
+    <title><%= htmlWebpackPlugin.options.title %></title>
+  </head>
+  <body>
+<!--    假如浏览器不支持js<noscript/>标签出现在页面上-->
+    <noscript>
+      <strong>We're sorry but <%= htmlWebpackPlugin.options.title %> doesn't work properly without JavaScript enabled. Please enable it to continue.</strong>
+    </noscript>
+    <div id="app"></div>
+    <!-- built files will be auto injected -->
+  </body>
+</html>
